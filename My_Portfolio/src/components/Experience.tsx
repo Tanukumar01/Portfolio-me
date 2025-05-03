@@ -1,0 +1,121 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Award, Calendar, Briefcase } from 'lucide-react';
+
+interface TimelineItemProps {
+  date: string;
+  title: string;
+  organization: string;
+  description: string;
+  type: 'education' | 'experience' | 'certification';
+}
+
+const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, organization, description, type }) => {
+  const getIcon = () => {
+    switch (type) {
+      case 'education':
+        return <Calendar className="text-primary-600 dark:text-primary-400" size={20} />;
+      case 'experience':
+        return <Briefcase className="text-secondary-600 dark:text-secondary-400" size={20} />;
+      case 'certification':
+        return <Award className="text-accent-600 dark:text-accent-400" size={20} />;
+    }
+  };
+  
+  return (
+    <motion.div 
+      className="relative pl-8 pb-8 border-l border-gray-300 dark:border-dark-600 last:border-0 last:pb-0"
+      initial={{ opacity: 0, x: -10 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="absolute left-[-9px] top-0 bg-white dark:bg-dark-800 p-1 rounded-full">
+        {getIcon()}
+      </div>
+      <div className="bg-white dark:bg-dark-700 p-6 rounded-lg shadow-md">
+        <span className="text-sm font-medium px-3 py-1 rounded-full bg-gray-100 dark:bg-dark-600 text-gray-700 dark:text-gray-300 inline-block mb-3">
+          {date}
+        </span>
+        <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">{title}</h3>
+        <h4 className="text-md text-primary-600 dark:text-primary-400 mb-3">{organization}</h4>
+        <p className="text-gray-600 dark:text-gray-400">{description}</p>
+      </div>
+    </motion.div>
+  );
+};
+
+const Experience: React.FC = () => {
+  const timelineItems: TimelineItemProps[] = [
+    {
+      date: '2022 - Present',
+      title: 'B.Tech in Computer Science',
+      organization: 'ABC University',
+      description: 'Pursuing a bachelor\'s degree in Computer Science with a focus on software engineering, data structures, and algorithms. Maintaining a 3.8 GPA while working on multiple projects.',
+      type: 'education'
+    },
+    {
+      date: 'Jan 2023 - April 2023',
+      title: 'Web Development Intern',
+      organization: 'XYZ Tech Solutions',
+      description: 'Contributed to the development of responsive web applications using React and Node.js. Implemented features that improved user experience and application performance.',
+      type: 'experience'
+    },
+    {
+      date: 'October 2023',
+      title: 'Hackathon Winner',
+      organization: 'National Coding Competition',
+      description: 'Led a team of 3 developers to win first place in a national hackathon. Created an AI-powered learning assistant that helps students track and improve their study patterns.',
+      type: 'experience'
+    },
+    {
+      date: 'August 2022',
+      title: 'C++ Programming Certification',
+      organization: 'Internshala',
+      description: 'Completed an 8-week training program in C++ programming, covering advanced concepts like object-oriented programming, data structures, and algorithm optimization.',
+      type: 'certification'
+    },
+    {
+      date: 'May 2023',
+      title: 'Full Stack Web Development',
+      organization: 'FreeCodeCamp',
+      description: 'Completed 300+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built 5 projects as part of the certification requirements.',
+      type: 'certification'
+    }
+  ];
+  
+  return (
+    <section id="experience" className="py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Experience & Education</h2>
+          <div className="w-24 h-1 bg-primary-600 dark:bg-primary-500 mx-auto mb-10 rounded-full"></div>
+          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">
+            My academic journey, work experience, and certifications that have shaped my skills and knowledge.
+          </p>
+        </motion.div>
+        
+        <div className="max-w-3xl mx-auto">
+          {timelineItems.map((item, index) => (
+            <TimelineItem 
+              key={index}
+              date={item.date}
+              title={item.title}
+              organization={item.organization}
+              description={item.description}
+              type={item.type}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
