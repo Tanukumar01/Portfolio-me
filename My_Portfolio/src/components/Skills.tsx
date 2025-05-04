@@ -40,7 +40,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills }) => {
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.5 }}
     >
-      <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{title}</h3>
+      <h3 className="text-xl  font-semibold mb-4 text-gray-900 dark:text-white">{title}</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {skills.map((skill, index) => (
           <div 
@@ -58,13 +58,13 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, skills }) => {
 const Skills: React.FC = () => {
   const frontendSkills = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Redux'];
   const backendSkills = ['Node.js', 'Express', 'MongoDB','REST API', ];
-  const languageSkills = ['JavaScript', 'TypeScript', 'Python', 'C++', 'SQL'];
+  const languageSkills = ['Python', 'C++', 'SQL', ];
   const toolsSkills = ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma', 'Docker'];
   
   const mainSkills = [
     { name: 'Frontend Development', level: 85 },
     { name: 'Backend Development', level: 75 },
-    { name: 'JavaScript/TypeScript', level: 90 },
+    { name: 'JavaScript/TypeScript', level: 85 },
     { name: 'React.js', level: 85 },
     { name: 'Node.js', level: 80 },
     { name: 'Database Design', level: 70 },

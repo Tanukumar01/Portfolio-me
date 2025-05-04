@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               className="text-2xl font-bold text-primary-400 cursor-pointer inline-block mb-4"
             >
               <span className="font-mono">&#60;</span>
-              <span>John Doe</span>
+              <span>Tanu Kumar</span>
               <span className="font-mono">/&#62;</span>
             </ScrollLink>
             <p className="text-gray-400 mb-6">
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/Tanukumar01" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/tanukumar01/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 <Mail size={20} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://twitter/tanukumar01.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
@@ -82,15 +82,15 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Contact Info</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>Mumbai, Maharashtra, India</li>
-              <li>johndoe@example.com</li>
-              <li>+91 9876543210</li>
+              <li>Kanpur, Uttar Pradesh, India</li>
+              <li>tanukumar842785@gmail.com</li>
+              <li>+91 8837852977</li>
             </ul>
           </div>
         </div>
         
         <div className="text-center text-gray-500 dark:text-gray-400 text-sm">
-          <p>&copy; {currentYear} John Doe. All rights reserved.</p>
+          <p>&copy; {currentYear} Tanu Kumar. All rights reserved.</p>
           <p className="mt-2">
             Built with React, TypeScript, Tailwind CSS, and Framer Motion
           </p>

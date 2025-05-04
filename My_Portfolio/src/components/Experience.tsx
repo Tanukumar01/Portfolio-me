@@ -7,7 +7,7 @@ interface TimelineItemProps {
   title: string;
   organization: string;
   description: string;
-  type: 'education' | 'experience' | 'certification';
+  type: 'education' | 'Training' | 'certification';
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, organization, description, type }) => {
@@ -15,7 +15,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, organization, 
     switch (type) {
       case 'education':
         return <Calendar className="text-primary-600 dark:text-primary-400" size={20} />;
-      case 'experience':
+      case 'Training':
         return <Briefcase className="text-secondary-600 dark:text-secondary-400" size={20} />;
       case 'certification':
         return <Award className="text-accent-600 dark:text-accent-400" size={20} />;
@@ -49,24 +49,24 @@ const Experience: React.FC = () => {
   const timelineItems: TimelineItemProps[] = [
     {
       date: '2022 - Present',
-      title: 'B.Tech in Computer Science',
-      organization: 'ABC University',
-      description: 'Pursuing a bachelor\'s degree in Computer Science with a focus on software engineering, data structures, and algorithms. Maintaining a 3.8 GPA while working on multiple projects.',
+      title: 'B.Tech in Computer Science And Engineering (AI/ML)',
+      organization: 'Kcc Institue Of Technology And Management',
+      description: 'Pursuing a bachelor\'s degree in Computer Science And Engineering (AI/ML) with a focus on software engineering, data structures, and algorithms. Maintaining a 8.5 GPA while working on multiple projects.',
       type: 'education'
     },
     {
-      date: 'Jan 2023 - April 2023',
-      title: 'Web Development Intern',
-      organization: 'XYZ Tech Solutions',
+      date: 'Dec 2024 - March 2025',
+      title: 'Web Development Training',
+      organization: 'HCL Tech ',
       description: 'Contributed to the development of responsive web applications using React and Node.js. Implemented features that improved user experience and application performance.',
-      type: 'experience'
+      type:'Training'
     },
     {
-      date: 'October 2023',
-      title: 'Hackathon Winner',
-      organization: 'National Coding Competition',
-      description: 'Led a team of 3 developers to win first place in a national hackathon. Created an AI-powered learning assistant that helps students track and improve their study patterns.',
-      type: 'experience'
+      date: 'May 2025',
+      title: 'Full Stack Web Development',
+      organization: 'Udemy',
+      description: 'Completed 80+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built 5 projects as part of the certification requirements.',
+      type: 'certification'
     },
     {
       date: 'August 2022',
@@ -75,13 +75,6 @@ const Experience: React.FC = () => {
       description: 'Completed an 8-week training program in C++ programming, covering advanced concepts like object-oriented programming, data structures, and algorithm optimization.',
       type: 'certification'
     },
-    {
-      date: 'May 2023',
-      title: 'Full Stack Web Development',
-      organization: 'FreeCodeCamp',
-      description: 'Completed 300+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built 5 projects as part of the certification requirements.',
-      type: 'certification'
-    }
   ];
   
   return (
