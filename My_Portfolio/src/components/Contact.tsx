@@ -144,26 +144,26 @@ const Contact: React.FC = () => {
             <ContactInfoItem 
               icon={<Mail size={24} />}
               title="Email"
-              content={<a href="mailto:johndoe@example.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">johndoe@example.com</a>}
+              content={<a href="mailto:johndoe@example.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">tanukumar842785gmail.com</a>}
             />
             
             <ContactInfoItem 
               icon={<Phone size={24} />}
               title="Phone"
-              content="+91 9876543210"
+              content="+91 8837852977"
             />
             
             <ContactInfoItem 
               icon={<MapPin size={24} />}
               title="Location"
-              content="Mumbai, Maharashtra, India"
+              content="Kanpur, Uttar Pradesh, India"
             />
             
             <div className="mt-10">
               <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Follow Me</h3>
               <div className="flex gap-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Tanukumar01" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-white dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 rounded-full shadow-md transition-colors duration-300"
@@ -174,7 +174,7 @@ const Contact: React.FC = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/tanukumar01/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-white dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 rounded-full shadow-md transition-colors duration-300"
@@ -196,7 +196,7 @@ const Contact: React.FC = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://instagram.com/this_is_tanvir.08" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-white dark:bg-dark-700 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 rounded-full shadow-md transition-colors duration-300"
