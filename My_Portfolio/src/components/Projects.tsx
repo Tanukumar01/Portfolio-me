@@ -35,8 +35,8 @@ const projects: Project[] = [
     description: 'AI-powered personal assistant that executes local tasks using advanced planning algorithms.',
     image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     tags: ['HTML', 'CSS', 'JavaScript','Node js','Express js', 'OpenRouter APIs'],
-    github: '',
-    demo: 'https://example.com',
+    github: 'https://github.com/Tanukumar01/AI_Task_Agent',
+    demo: 'https://ai-task-agent-oqf0.onrender.com/',
     features: [
       'Natural language processing',
       'Task scheduling and prioritization',
