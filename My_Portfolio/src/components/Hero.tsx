@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
                 <img 
                   src=" src\Photos\my photo (1).jpg" 
                   alt="Tanu Kumar" 
-                  className="w-full h-full  object-cover rounded-lg"
+                  className="w-full h-full ransform transition-transform duration-300 hover:scale-110 object-cover rounded-lg"
                 />
               </div>
             </div>
