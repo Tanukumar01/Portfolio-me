@@ -19,7 +19,7 @@ function App() {
       setShowScrollToTop(window.scrollY > 500);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);  // this function handle the scroll function
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
