@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg blur opacity-75 dark:opacity-50"></div>
               <div className="relative w-64 h-64 md:w-80 md:h-80 bg-white dark:bg-dark-700 rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src=" src\Photos\my photo (1).jpg" 
+                  src={"/src/Photos/my_photo.jpg"}
                   alt="Tanu Kumar" 
                   className="w-full h-full ransform transition-transform duration-300 hover:scale-110 object-cover rounded-lg"
                 />
