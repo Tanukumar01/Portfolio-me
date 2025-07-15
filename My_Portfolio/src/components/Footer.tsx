@@ -91,9 +91,6 @@ const Footer: React.FC = () => {
         
         <div className="text-center text-gray-500 dark:text-gray-400 text-sm">
           <p>&copy; {currentYear} Tanu Kumar. All rights reserved.</p>
-          <p className="mt-2">
-            Built with React, TypeScript, Tailwind CSS, and Framer Motion
-          </p>
         </div>
       </div>
     </footer>
