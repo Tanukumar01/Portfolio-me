@@ -7,7 +7,7 @@ interface TimelineItemProps {
   title: string;
   organization: string;
   description: string;
-  type: 'education' | 'Training' | 'certification';
+  type: 'education' | 'training' | 'certification' | 'internship';
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, organization, description, type }) => {
@@ -15,10 +15,14 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, organization, 
     switch (type) {
       case 'education':
         return <Calendar className="text-primary-600 dark:text-primary-400" size={20} />;
-      case 'Training':
+      case 'training':
         return <Briefcase className="text-secondary-600 dark:text-secondary-400" size={20} />;
       case 'certification':
         return <Award className="text-accent-600 dark:text-accent-400" size={20} />;
+      case 'internship':
+        return <Award className="text-green-600 dark:text-green-400" size={20} />;
+      default:
+        return <Briefcase className="text-secondary-600 dark:text-secondary-400" size={20} />;
     }
   };
   
@@ -55,14 +59,21 @@ const Experience: React.FC = () => {
       type: 'education'
     },
     {
-      date: 'Dec 2024 - March 2025',
-      title: 'Web Development Training',
-      organization: 'HCL Tech ',
-      description: 'Contributed to the development of responsive web applications using React and Node.js. Implemented features that improved user experience and application performance.',
-      type:'Training'
+      date: '2025 - Present',
+      title: 'Software Developer Intern',
+      organization: 'HashPunch LLP',
+      description: 'Developed and optimized RESTful APIs for AI tools like GitHub Issue Generator and Intent Classifier using Node.js, Express, and MongoDB. Reduced API response time by 40% and minimized infrastructure costs through backend optimizations. Integrated OpenAI APIs to enable intelligent automation and enhance AI-driven workflows. Currently building a company-wide ITSM tool, designing scalable backend systems and deploying services using AWS (EC2, S3).',
+      type: 'internship'
     },
     {
-      date: 'May 2025',
+      date: 'Dec 2024 - March 2025',
+      title: 'Web Development Training',
+      organization: 'HCL Tech',
+      description: 'Contributed to the development of responsive web applications using React and Node.js. Implemented features that improved user experience and application performance.',
+      type: 'training'
+    },
+    {
+      date: 'May 2024',
       title: 'Full Stack Web Development',
       organization: 'Udemy',
       description: 'Completed 80+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built 5 projects as part of the certification requirements.',
@@ -95,16 +106,19 @@ const Experience: React.FC = () => {
         </motion.div>
         
         <div className="max-w-3xl mx-auto">
-          {timelineItems.map((item, index) => (
-            <TimelineItem 
-              key={index}
-              date={item.date}
-              title={item.title}
-              organization={item.organization}
-              description={item.description}
-              type={item.type}
-            />
-          ))}
+          {timelineItems.map((item, index) => {
+            console.log('Rendering timeline item:', item.title, 'Type:', item.type);
+            return (
+              <TimelineItem 
+                key={index}
+                date={item.date}
+                title={item.title}
+                organization={item.organization}
+                description={item.description}
+                type={item.type}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

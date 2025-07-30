@@ -18,7 +18,7 @@ const projects: Project[] = [
     id: 1,
     title: 'TalentTrek',
     description: 'Job portal with AI resume screening and intelligent job matching algorithm.',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/src/Photos/TalentTrek -Thumbnail.png',
     tags: ['React', 'Node.js', 'MongoDB', 'Express', 'APIs', 'AI/ML'],
     github: 'https://github.com/Tanukumar01/TalentTrek',
     demo: 'https://talent-trek.onrender.com/',
@@ -31,9 +31,25 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: 'AI-Powered Analytics Dashboard',
+    description: 'Built an intelligent dashboard that delivers actionable insights through AI-driven tools and real-time data visualization.',
+    image: '/src/Photos/analytics-dashboard.png',
+    tags: ['HTML', 'TailwindCSS', 'JavaScript','React js ','Chart.js','Framer Motion'],
+    github: 'https://github.com/Tanukumar01/ai-powered-analytics-dashboard.git',
+    demo: 'https://ai-powered-anaytics-dashboard.vercel.app/',
+    features: [
+      'AI Assistant: Provides instant insights and answers to data-related queries',
+      'AI Optimizer: Suggests optimal business strategies based on data patterns',
+      'AI Sentiment Analysis: Analyzes user or customer feedback for sentiment trends',
+      'Future Forecasting: Predicts key metrics using AI-based time series analysis.',
+      'Interactive Visuals: Includes pie charts, line graphs, and bar charts for clear data representation.'
+      ]
+  },
+  {
+    id: 3,
     title: 'AI Task Agent',
     description: 'AI-powered personal assistant that executes local tasks using advanced planning algorithms.',
-    image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/src/Photos/ai-task-agent.png',
     tags: ['HTML', 'CSS', 'JavaScript','Node js','Express js', 'OpenRouter APIs'],
     github: 'https://github.com/Tanukumar01/AI_Task_Agent',
     demo: 'https://ai-task-agent-oqf0.onrender.com/',
@@ -77,7 +93,8 @@ const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ proj
         <img 
           src={project.image} 
           alt={project.title} 
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+          loading="lazy"
         />
         <button 
           onClick={onClick}
@@ -149,7 +166,8 @@ const ProjectDetailModal: React.FC<{ project: Project; onClose: () => void }> = 
           <img 
             src={project.image} 
             alt={project.title} 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
           />
           <button 
             onClick={onClose}
