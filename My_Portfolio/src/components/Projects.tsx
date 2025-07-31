@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Maximize2, X } from 'lucide-react';
 
+// Import images directly
+import talentTrekImage from '/images/TalentTrek -Thumbnail.png';
+import analyticsImage from '/images/analytics-dashboard.png';
+import aiTaskImage from '/images/ai-task-agent.png';
+
 interface Project {
   id: number;
   title: string;
@@ -18,7 +23,7 @@ const projects: Project[] = [
     id: 1,
     title: 'TalentTrek',
     description: 'Job portal with AI resume screening and intelligent job matching algorithm.',
-    image: '/images/TalentTrek -Thumbnail.png',
+    image: talentTrekImage,
     tags: ['React', 'Node.js', 'MongoDB', 'Express', 'APIs', 'AI/ML'],
     github: 'https://github.com/Tanukumar01/TalentTrek',
     demo: 'https://talent-trek.onrender.com/',
@@ -33,7 +38,7 @@ const projects: Project[] = [
     id: 2,
     title: 'AI-Powered Analytics Dashboard',
     description: 'Built an intelligent dashboard that delivers actionable insights through AI-driven tools and real-time data visualization.',
-    image: '/images/analytics-dashboard.png',
+    image: analyticsImage,
     tags: ['HTML', 'TailwindCSS', 'JavaScript','React js ','Chart.js','Framer Motion'],
     github: 'https://github.com/Tanukumar01/ai-powered-analytics-dashboard.git',
     demo: 'https://ai-powered-anaytics-dashboard.vercel.app/',
@@ -49,7 +54,7 @@ const projects: Project[] = [
     id: 3,
     title: 'AI Task Agent',
     description: 'AI-powered personal assistant that executes local tasks using advanced planning algorithms.',
-    image: '/images/ai-task-agent.png',
+    image: aiTaskImage,
     tags: ['HTML', 'CSS', 'JavaScript','Node js','Express js', 'OpenRouter APIs'],
     github: 'https://github.com/Tanukumar01/AI_Task_Agent',
     demo: 'https://ai-task-agent-oqf0.onrender.com/',
