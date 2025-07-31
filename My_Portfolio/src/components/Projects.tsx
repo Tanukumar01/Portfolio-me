@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Maximize2, X } from 'lucide-react';
 
-// Use public URLs for images
-const talentTrekImage = '/images/TalentTrek -Thumbnail.png';
-const analyticsImage = '/images/analytics-dashboard.png';
-const aiTaskImage = '/images/ai-task-agent.png';
+// Import images from assets
+import talentTrekImage from '../assets/TalentTrek -Thumbnail.png';
+import analyticsImage from '../assets/analytics-dashboard.png';
+import aiTaskImage from '../assets/ai-task-agent.png';
 
 interface Project {
   id: number;
