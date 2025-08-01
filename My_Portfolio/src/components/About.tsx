@@ -68,7 +68,7 @@ const About: React.FC = () => {
               Passionate Software Engineer with a focus on innovation
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm a third-year B.Tech Computer Science student with a deep passion for software development. My journey began with simple HTML websites and has evolved into building complex full-stack applications.
+              I'm a final year B.Tech Computer Science student with a deep passion for software development. My journey began with simple HTML websites and has evolved into building complex full-stack applications.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               I enjoy solving complex problems and turning ideas into reality through elegant code. My experience spans across frontend and backend technologies, with a particular interest in creating intuitive user experiences.

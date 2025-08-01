@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               </span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-              I'm a passionate 3rd year B.Tech CSE student focused on creating
+              I'm a passionate final year B.Tech CSE student focused on creating
               exceptional digital experiences. Currently exploring Web
               Development, AI.
             </p>
