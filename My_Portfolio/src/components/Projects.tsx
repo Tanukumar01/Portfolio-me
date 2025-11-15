@@ -26,7 +26,7 @@ const projects: Project[] = [
     image: talentTrekImage,
     tags: ['React', 'Node.js', 'MongoDB', 'Express', 'APIs', 'AI/ML'],
     github: 'https://github.com/Tanukumar01/TalentTrek',
-    demo: 'https://talent-trek.onrender.com/',
+    demo: 'https://talenttrek-rho.vercel.app/',
     features: [
       'Resume parsing and keyword extraction',
       'Job recommendation based on skills',
