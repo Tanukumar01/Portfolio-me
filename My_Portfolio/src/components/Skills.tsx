@@ -62,8 +62,8 @@ const Skills: React.FC = () => {
   const toolsSkills = ['Git', 'GitHub', 'VS Code', 'Postman', 'Figma', 'Docker'];
   
   const mainSkills = [
-    { name: 'Frontend Development', level: 85 },
-    { name: 'Backend Development', level: 75 },
+    { name: 'Frontend Development', level: 80 },
+    { name: 'Backend Development', level: 85 },
     { name: 'JavaScript/TypeScript', level: 85 },
     { name: 'React.js', level: 85 },
     { name: 'Node.js', level: 80 },

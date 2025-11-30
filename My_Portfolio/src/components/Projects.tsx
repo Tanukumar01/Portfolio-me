@@ -19,8 +19,24 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+  {   
     id: 1,
+    title: 'MedClerk – AI-Powered Medical Report Organizer',
+    description: 'Developed a healthcare platform that helps users organize and manage their digital medical records.',
+    image: '/images/MedClerk.png',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'APIs', 'AI/ML','Postgres','Google Cloud' ],
+    github: 'https://github.com/downtimelabs/medclerk-frontend.git',
+    demo: 'https://medclerk-frontend.vercel.app/',
+    features: [
+      'Digital medical record organization',
+      'AI chatbot with OCR for document extraction and translation',
+      'Role-based dashboards with real-time vitals and communication',
+      'AI-driven report categorization and summarization'
+    ]
+
+  },
+  {
+    id: 2,
     title: 'TalentTrek',
     description: 'Job portal with AI resume screening and intelligent job matching algorithm.',
     image: talentTrekImage,
@@ -35,7 +51,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: 'AI-Powered Analytics Dashboard',
     description: 'Built an intelligent dashboard that delivers actionable insights through AI-driven tools and real-time data visualization.',
     image: analyticsImage,
@@ -51,7 +67,7 @@ const projects: Project[] = [
       ]
   },
   {
-    id: 3,
+    id: 4,
     title: 'AI Task Agent',
     description: 'AI-powered personal assistant that executes local tasks using advanced planning algorithms.',
     image: aiTaskImage,
@@ -67,7 +83,7 @@ const projects: Project[] = [
   },
   
   {
-    id: 3,
+    id: 5,
     title: 'Weather App',
     description: 'A responsive weather application providing real-time forecasts for locations worldwide.',
     image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
